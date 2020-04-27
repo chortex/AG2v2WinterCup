@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://openag.pro/fisk.png" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>AG Winter Cup</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="AG" style="height: 75px; width: auto;">AG Winter Cup</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="nav nav-tab navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#main">Main</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#rules">Rules</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#teams">Teams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#brackets">Brackets</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#results">Results</a>
+          </li> -->
+        </ul>
+        <button class="btn btn-outline-warning btn-lg">Sign Up</button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="myTabContent" class="tab-content">
+      <div id="main" class="tab-pane fade show active mx-auto">
+        <div class="jumbotron">
+          <div id="cover-image">
+            <img src="img/cover.svg" alt="Adrenaline Gamer">
+          </div>
+          <h2 id="cover-header">Adrenaline Gamer Winter Cup!</h2>
+          <p class="text-muted">We are happy to open the registration on Adrenaline Gamer <b>2v2</b> Tournament.</p>
+          <hr>
+          <h3>When?</h3>
+          <p><img src="img/calendar.svg" alt="calendar"> 24th of January</p>
+          <h3>What?</h3>
+          <p>Half Life professional mode <a href="https://openag.pro/" target="_blank">Adrenaline Gamer</a> 2v2 online tournament</p>
+          <h3>Prizes</h3>
+          <p><img src="img/trophy.svg" alt="Prizes"> Devices for winners</p>
+          <h4 class="text-muted">Tournament finished. Congratulations to <span class="text-danger">WWW</span> team.</h4>
+          <button class="btn btn-lg btn-outline-warning">Sign Up</button>
+        </div>
+      </div>
+      <div id="rules" class="tab-pane fade">
+        <div class="jumbotron mx-auto">
+          <h3>General information</h3>
+          <p>The tournament is held online in a professional Half Life game mode <a href="https://openag.pro/" target="_blank">Adrenaline Gamer / OpenAG</a></p>
+          <p>Slag banned players are not allowed.</p>
+          <p class="text-warning">There were posted an important update in the servers section. Please check it out.</p>
+          <p class="text-muted">Before signing up to take part in a tournament make sure that you read the rules and you are able to show up for tournament games. </p>
+          <hr>
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active " data-toggle="tab" href="#format">Format</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#requirements">Requirements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#maplist">Map List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#serverlist">Server List</a>
+            </li>
+          </ul>
+          <hr>
+          <div id="myRulesContent" class="tab-content">
+            <div id="format" class="tab-pane fade show active">
+              <br>
+              <p class="text-primary">Tournament consists of two stages: qualifiers stage (round robin) and olympic system with double elimination brackets</p>
+              <p class="text-muted">Qualification of participants is carried out randomly</p>
+              <h3>Qualifiers (group stage)</h3>
+              <p>Group stage is going with mode round robin (everyone vs everyone)</p>
+              <p>Every team picks home map for every single match from map list</p>
+              <p>3 points per win</p>
+              <p>1 point per draw</p>
+              <p>0 point per lose</p>
+              <p>Two teams with the highest points amount go to the next stage</p>
+              <p>If two teams have equal points amount team who won their face to face match is going forward</p>
+              <p>If their face to face match finished with score 1:1 team with better k:d is going forward</p>
+              <h3>Brackets</h3>
+              <p>This stage is double elimination with loser brackets</p>
+              <p>Every match must be played with mode bo3</p>
+              <p>Final must be played with mode bo5</p>
+              <p>Maps should be picked by elimination from a map list</p>
+            </div>
+            <div id="requirements" class="tab-pane fade">
+              <br>
+              <p>Adrenaline Gamer 6.6 and <a href="https://openag.pro/" target="_blank">OpenAG</a> both are allowed</p>
+              <p>Any optional software what's giving you any kind of advantage (cheats) are forbidden</p>
+              <p>Spawn mines/satchels, teleport mines/satchels, ghost mines/satchels, path blocking with mines/satchels are not allowed. -5 frags will be deducted from that teams score per infraction</p>
+              <p>If a player does not spawn for 5 consecutive seconds upon death, 1 frag will be deduced from their final score. An additional frag will be deducted for each additional 5 seconds that passes without spawning</p>
+              <p>Fps limit is 144 frames per second. The violation will be punishable by the technical defeat of team on each map where used more than 144 fps</p>
+              <p>Allowed models are <span style="color: red;">red</span> and <span style="color: blue;">blue</span>. Valve models can be used if opponent agrees. It's forbidden to switch models once game is agstarted</p>
+              <p>If both teams agreed any other game mode they are allowed to play it otherwise game mode should be set hlccl</p>
+              <p>Every player must have demos of his games and upload it if administrators requested</p>
+              <p>Winners team captain must upload screenshots of games to his steam profile or any other host </p>
+              <p class="text-muted">Any unsaid issues that arise will be dealt with by an admin</p>
+            </div>
+            <div id="maplist" class="tab-pane fade">
+              <br>
+              <p class="text-primary">In qualifiers stage every team picks new home map for every single match from map list</p>
+              <p class="text-primary">Maps should be picked by elimination from a map list. Per one map for each team and third map is a decider map</p>
+              <p class="text-muted">Map pool might be changed after discussion with participants before 24th of January</p>
+              <p>boot_camp</p>
+              <p>crossfire</p>
+              <p>stalkyard</p>
+              <p>stalkx</p>
+              <p>lost_village2</p>
+              <p>endcamp</p>
+              <p>elixir</p>
+              <p>vengeance</p>
+              <p>cold_faces</p>
+              <p>havoc</p>
+              <p>rapidcore</p>
+              <p>rustmill</p>
+              <p>datacore</p>
+            </div>
+            <div id="serverlist" class="tab-pane fade">
+              <br>
+              <p class="text-primary">If both teams agreed to play on another server they are allowed otherwise server should be picked by elimination from server list</p>
+              <p class="text-warning">! Important update !</p>
+              <p class="text-warning">Your map will be played in the opponents local region (server chosen by your team from server list) and your opponents map will be played in your local region (server chosen by them from server list).
+                Rare exceptions are when teams will ping above 150 on servers. In these cases different regions can be used to adequately provide similar pings for more competitive game play.
+              </p>
+              <p class="text-warning">Talking about playoffs where there is decider map it must be played in local region of team who has better k:d ratio after results home maps but server should be chosen by another team.</p>
+              <p class="text-warning">Any of the above need not apply if the two teams can come to an arrangement amongst themselves on which servers to use since teams might be regionally mixed. Only when an agreement cannot be made must the above be followed to ensure the best pings possible for the away team.</p>
+              <p class="text-danger">Any of the above need not apply if there is server in serverlist where teams have ping difference less than 70. In that case teams might be forcing to use a server with the smallest gap.</p>
+              <p><span class="text-muted">HLDMPRO 2:</span> 213.141.129.246:27022</p>
+              <p><span class="text-muted">HLDMPRO 3:</span> 217.61.109.99:27017</p>
+              <p><span class="text-muted">EHLL GAMESERVER 1:</span> 217.61.7.69:27015</p>
+              <p><span class="text-muted">Xen-Raiders:</span> 85.14.226.179:27015</p>
+              <p><span class="text-muted">SourceRuns:</span> 94.237.116.12:27015</p>
+              <p><span class="text-muted">[420] Foghorn Drive:</span> 80.211.171.153:27015</p>
+              <p><span class="text-muted">[420] Eas Forz:</span> 80.211.199.100:27017</p>
+              <p><span class="text-muted">[420] Scrap Assembly:</span> 176.107.130.114:27017</p>
+              <p><span class="text-muted">[420] Foolmoon Relay:</span> 213.141.129.246:20115</p>
+              <p><span class="text-muted">AGHLDM DE #1:</span> 139.162.179.70:27015</p>
+              <p><span class="text-muted">AGHLDM ES #2:</span> 85.208.20.34:27015</p>
+              <p><span class="text-muted">AGHLDM US #1:</span> 23.92.29.17:27015</p>
+              <p><span class="text-muted">EHLL GAMESERVER 3:</span> 216.189.154.79:27015</p>
+              <p><span class="text-muted">EHLL GAMESERVER 4:</span> 216.189.154.79:27017</p>
+              <p><span class="text-muted">AG North Korea:</span> 63.142.255.102:27015</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="teams" class="tab-pane fade">
+        <div class="jumbotron">
+          <h3>Teams and players list</h3>
+          <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="text-primary">#</th>
+                <th scope="col" class="text-primary">Team</th>
+                <th scope="col" class="text-primary">Tag</th>
+                <th scope="col" class="text-primary">Players</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-dark">
+                <th scope="row">1</th>
+                <td><p>{PeruTurkey}</p></td>
+                <td><p>{PeruTurkey}</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/profiles/76561198108909415/" target="_blank">olie (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/profiles/76561198012879050/" target="_blank">Dispara</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">2</th>
+                <td><p>*2cute*</p></td>
+                <td><p>*2cute*</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/profiles/76561198014464793/" target="_blank">castilio (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/peacefulthroughout/" target="_blank">rammy</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">3</th>
+                <td><p>Good Game Well Played!</p></td>
+                <td><p>GGWP</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/oopskurt" target="_blank">oopskurt (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/eeeeeeeeee1eeeee" target="_blank">Down</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">4</th>
+                <td><p>AVANGAR</p></td>
+                <td><p>AVANGAR</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/huffymad" target="_blank">huffy (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/player366" target="_blank">prov</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">5</th>
+                <td><p>Conquerors</p></td>
+                <td><p>Conquerors^</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/chort" target="_blank">chrtx (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/esplaw" target="_blank">lawlly</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">6</th>
+                <td><p>Elite Turkish Players</p></td>
+                <td><p>^eTRp^</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/profiles/76561198259979485/" target="_blank">LanbeR (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/profiles/76561198106775256/" target="_blank">ExcLuSIVe</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">7</th>
+                <td><p>We will win</p></td>
+                <td><p>WWW</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/profiles/76561197987608258" target="_blank">Alex (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/0a" target="_blank">Rayvex</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">8</th>
+                <td><p>Adrenaline Extreme</p></td>
+                <td><p>Ad.e</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/Home/" target="_blank">Assassin (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/afkkkkkkkkkkkkkrf" target="_blank">Darkzito</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">9</th>
+                <td><p>Ar</p></td>
+                <td><p>Ar</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/Castorwar/" target="_blank">cast0r (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/voksiusgg/" target="_blank">Voksius</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">10</th>
+                <td><p>Los Chupetines</p></td>
+                <td><p>Chupetina//</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/Dcarlox/" target="_blank">Dcarlox (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/profiles/76561198148663898/" target="_blank">Rhye</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">11</th>
+                <td><p>2020</p></td>
+                <td><p>2020</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/profiles/76561198048529632/" target="_blank">impulse (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/supkid/" target="_blank">rav</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">12</th>
+                <td><p>Aprendiendo Tácticas Kabronas Xtreme</p></td>
+                <td><p>-<[ATKx]>-</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/profiles/76561198868987250/" target="_blank">Reyli (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/profiles/76561198802149424/" target="_blank">Eliaz</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">13</th>
+                <td><p>shA</p></td>
+                <td><p>[shA]</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/TM-halflife/" target="_blank">Anxiety (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/Corporal_Hecu/" target="_blank">Shine</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">14</th>
+                <td><p>Keep Trying</p></td>
+                <td><p>KT*</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/fedeowsla/" target="_blank">Exspectred (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/TheCrazy38_Perfil/" target="_blank">Crazy</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">15</th>
+                <td><p>u will Lose</p></td>
+                <td><p>[uwL]</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/zNdz/" target="_blank">spydah (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/mummy1910" target="_blank">mummy</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">16</th>
+                <td><p>Squad of Bhoppers</p></td>
+                <td><p>[SoB]</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/smiley_30rus" target="_blank">_Smiley (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/scriptedsnark" target="_blank">ScriptedSnark</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">17</th>
+                <td><p>keep 0ut from hell</p></td>
+                <td><p>{k0h}</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/profiles/76561198142983524/" target="_blank">keep0ut (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/profiles/76561198076245891/" target="_blank">hellw1sh</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">18</th>
+                <td><p>Female Body Inspectors</p></td>
+                <td><p>FBI</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/navinah/" target="_blank">navi (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/profiles/76561198084435857" target="_blank">Homieless</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">19</th>
+                <td><p>Teran Advanced Union</p></td>
+                <td><p>TAU</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/noonka" target="_blank">!NooN! (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/_Snatcher_/" target="_blank">Snatcher</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">20</th>
+                <td><p>Conejo</p></td>
+                <td><p>CoNej0</p></td>
+                <td>
+                  <a href="http://steamcommunity.com/id/drAkeDTONM" target="_blank">drAke (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/Laz8146" target="_blank">Nishikori</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">21</th>
+                <td><p>Rota</p></td>
+                <td><p>Rota</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/stt55" target="_blank">arpc (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/profiles/76561198825250659" target="_blank">satanicfeather</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">22</th>
+                <td><p>zero tolerance</p></td>
+                <td><p>-zt-</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/defrwet/" target="_blank">khiss (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/profiles/76561198362501385" target="_blank">baki hanma</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">23</th>
+                <td><p>Not Oligofrenic Idiots</p></td>
+                <td><p>[NOI]</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/execut4ble" target="_blank">grifteskymfning (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/yhoiluhi/" target="_blank">yhoiluhi</a>
+                </td>
+              </tr>
+              <tr class="table-dark">
+                <th scope="row">24</th>
+                <td><p>Alpha</p></td>
+                <td><p>[4lpha]</p></td>
+                <td>
+                  <a href="https://steamcommunity.com/id/egon4ik/" target="_blank">D1maZombie (c)</a>
+                  <br>
+                  <a href="https://steamcommunity.com/id/sibirskiymedved/" target="_blank">Medved</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div id="brackets" class="tab-pane fade">
+        <div class="jumbotron">
+          <h3 class="text-muted">Winners</h3>
+          <h3>1. We will win</h3>
+          <br>
+          <h4>2. 2cute</h4>
+          <br>
+          <h5>3. {PeruTurkey}</h5>
+          <br>
+          <h4 class="text-muted">Demos pack of some tournament games download here:</h4>
+          <a class="btn btn-lg btn-primary" href="https://drive.google.com/drive/folders/1JnWYvQ6ZLFxmhDkHuEUYgBmsCQXEFU9N?usp=sharing" target="_blank">Demos</a>
+          <br>
+          <br>
+          <h3 class="text-muted">Brackets</h3>
+          <p>For more details about brackets and predictions follow the <a href="https://challonge.com/d1bx0303">link</a></p>
+          <iframe src="https://challonge.com/d1bx0303/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+        </div>
+      </div>
+      <!-- <div id="results" class="tab-pane fade">
+        <div class="jumbotron">
+          <h3 class="text-muted">Group A</h3>
+          <p>2020 <span class="text-warning">[0:2]</span> u will Lose</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/82967547_175745497101652_5298749905248976896_n.png?_nc_cat=107&_nc_ohc=jeq7c0HO8ycAX-osbIi&_nc_ht=scontent.flwo3-1.fna&oh=3e427efc1862391bf1c324add2e32c62&oe=5ECF374F" target="_blank">boot_camp</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83472153_157203665701129_6007633578848944128_n.png?_nc_cat=104&_nc_ohc=aIPcpJ4S1tgAX9Y91Gi&_nc_ht=scontent.flwo3-1.fna&oh=02c419c2a5d498310d001275f790b5bb&oe=5ED8EFC8" target="_blank">crossfire</a>
+          <hr>
+          <p>Not Oligofrenic Idiots <span class="text-warning">[ : ]</span> Rota</p>
+          <hr>
+          <p>Rota <span class="text-warning">[0:2]</span> 2020</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/84699089_1394244244097158_5132878448666083328_n.png?_nc_cat=107&_nc_ohc=Hw4TDvFfMLgAX_hYUT0&_nc_ht=scontent.flwo3-1.fna&oh=dc1ccea5094326c68d27d0d09b44eaca&oe=5E9550B9" target="_blank">stalkx</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83889182_2552908511501487_2143572779629281280_n.png?_nc_cat=101&_nc_ohc=nsTevWZW388AX8nh1Or&_nc_ht=scontent.flwo3-1.fna&oh=e21165c239792cb7142999648e3608c7&oe=5ED50FB9" target="_blank">endcamp</a>
+          <hr>
+          <p>u will Lose <span class="text-warning">[2:0]</span> Not Oligofrenic Idiots</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83585713_121094929186887_2860903885101334528_n.png?_nc_cat=102&_nc_ohc=LUlYaXTkqD0AX8jLT2c&_nc_ht=scontent.flwo3-1.fna&oh=e51d09d8eee6819061818e872c8ff2b4&oe=5ED965D8" target="_blank">crossfire</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83369763_1188361914700892_2613155959421272064_n.png?_nc_cat=109&_nc_ohc=10ZyhAaia04AX_KW2iJ&_nc_ht=scontent.flwo3-1.fna&oh=e41bf633eae0b660c3ae9d3d6962a1b3&oe=5E8E9CAE" target="_blank">boot_camp</a>
+          <hr>
+          <p>Not Oligofrenic Idiots <span class="text-warning">[0:2]</span> 2020</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/84396175_2553763491418958_1194507396601348096_n.png?_nc_cat=104&_nc_ohc=Y2C2Qio_rAMAX_5VM7Q&_nc_ht=scontent.flwo3-1.fna&oh=077a62535a863fce36b64bacbd26acca&oe=5EDABA64" target="_blank">lost_village2</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/84133419_181563586539768_254057086608998400_n.png?_nc_cat=107&_nc_ohc=PmB11ArEb3EAX_iwcwP&_nc_ht=scontent.flwo3-1.fna&oh=9108cf66346282f1d0ff513d0b16f19d&oe=5ECAA18C" target="_blank">stalkx</a>
+          <hr>
+          <p>u will Lose <span class="text-warning">[2:0]</span> Rota</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/84071359_176637350217033_4728278995940933632_n.png?_nc_cat=110&_nc_ohc=5YXHtm4994kAX_r_qNT&_nc_ht=scontent.flwo3-1.fna&oh=1195751eff1d330af7e94047a5ba1124&oe=5EC7EDA9" target="_blank">vengeance</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83509839_543481539599041_3696259115614470144_n.png?_nc_cat=110&_nc_ohc=cdSdt6Wpim8AX-Mk302&_nc_ht=scontent.flwo3-1.fna&oh=9841bc3db6fa3024ce45dda63cbd55f1&oe=5E9158E4" target="_blank">boot_camp</a>
+          <hr>
+          <h3 class="text-muted">Group B</h3>
+          <p>Conquerors <span class="text-warning">[2:0]</span> keep 0ut from hell</p>
+          <a href="https://steamuserimages-a.akamaihd.net/ugc/768362254716135634/BE95DFD652648D0A5406685A79542550E0173B7A/" target="_blanc">endcamp</a>
+          <a href="https://steamuserimages-a.akamaihd.net/ugc/768362254716135869/7C62B39A5CF08C0E4EB629FE41E3D4A22FF1ADE1/" target="_blanc">vengeance</a>
+          <hr>
+          <p>Los Chupetines <span class="text-warning">[ : ]</span> Keep Trying</p>
+          <hr>
+          <p>Keep Trying <span class="text-warning">[ : ]</span> Conquerors</p>
+          <hr>
+          <p>keep 0ut from hell <span class="text-warning">[ : ]</span> Los Chupetines</p>
+          <hr>
+          <p>Los Chupetines <span class="text-warning">[0:2]</span> Conquerors</p>
+          <a href="https://steamuserimages-a.akamaihd.net/ugc/768362254702807148/59AD90C552A61F5B6B85EF730F217A8E37DE0ACD/" target="_blank">vengeance</a>
+          <a href="https://steamuserimages-a.akamaihd.net/ugc/768362254702806894/D88E4C90D013DCA8B335AF2AAA86EF4F8CB80591/" target="_blank">lost_village2</a>
+          <hr>
+          <p>keep 0ut from hell <span class="text-warning">[ : ]</span> Keep Trying</p>
+          <hr>
+          <h3 class="text-muted">Group C</h3>
+          <p>Female Body Inspectors <span class="text-warning">[ : ]</span> AVANGAR</p>
+          <hr>
+          <p>shA <span class="text-warning">[ : ]</span> Ar</p>
+          <hr>
+          <p>Ar <span class="text-warning">[ : ]</span> Female Body Inspectors</p>
+          <hr>
+          <p>AVANGAR <span class="text-warning">[ : ]</span> shA</p>
+          <hr>
+          <p>shA <span class="text-warning">[ : ]</span> Female Body Inspectors</p>
+          <hr>
+          <p>AVANGAR <span class="text-warning">[ : ]</span> Ar</p>
+          <hr>
+          <h3 class="text-muted">Group D</h3>
+          <p>*2cute* <span class="text-warning">[2:0]</span> We will win</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83509838_2457342844531089_6491410010646511616_n.jpg?_nc_cat=106&_nc_ohc=Zro6wzXfXbIAX9gcn5y&_nc_ht=scontent.flwo3-1.fna&oh=632eec424adb7a2707ba8047beb6f70f&oe=5E902066" target="_blank">stalkyard</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/84237736_153816822736333_4583983938929688576_n.jpg?_nc_cat=107&_nc_ohc=LxWuZ4BagxIAX-uNXpO&_nc_ht=scontent.flwo3-1.fna&oh=1f25e4b9b39d1762ec4204b8bb81104b&oe=5E90FC35" target="_blank">cold_faces</a>
+          <hr>
+          <p>Alpha <span class="text-warning">[ : ]</span> Aprendiendo Tácticas Kabronas Xtreme</p>
+          <hr>
+          <p>Aprendiendo Tácticas Kabronas Xtreme <span class="text-warning">[0:2]</span> *2cute*</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83443949_213739083120352_4563078413249675264_n.jpg?_nc_cat=102&_nc_ohc=-9UVhjMCwTQAX-a2fMX&_nc_ht=scontent.flwo3-1.fna&oh=b4465fd6b5839b47f58591038e479fce&oe=5E8D3A44" target="_blank">endcamp</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/82974842_1005938743114287_8600204125092708352_n.jpg?_nc_cat=105&_nc_ohc=VAYnGyg2pXcAX86-CqY&_nc_ht=scontent.flwo3-1.fna&oh=41ad710b81e22f94b6beef44b93dea7a&oe=5E8FA03E" target="_blank">boot_camp</a>
+          <hr>
+          <p>We will win <span class="text-warning">[ : ]</span> Alpha</p>
+          <hr>
+          <p>Alpha <span class="text-warning">[ : ]</span> *2cute*</p>
+          <hr>
+          <p>We will win <span class="text-warning">[ : ]</span> Aprendiendo Tácticas Kabronas Xtreme</p>
+          <hr>
+          <h3 class="text-muted">Group E</h3>
+          <p>Teran Advanced Union <span class="text-warning">[0:2]</span> Adrenaline Extreme</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83307275_493293681383458_3431325655688544256_n.png?_nc_cat=108&_nc_ohc=i4kYE_kSUTEAX8lNK_f&_nc_ht=scontent.flwo3-1.fna&oh=95918044d57e0a38864fd0dddfe9dfbd&oe=5E8EE22E" target="_blank">stalkyard</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83588806_178787616544051_8099465420039258112_n.png?_nc_cat=106&_nc_ohc=SXv331moNq8AX8Vsxo4&_nc_ht=scontent.flwo3-1.fna&oh=8f538a5d6a7efd176206bea4780c1841&oe=5EC2A0B9" target="_blank">vengeance</a>
+          <hr>
+          <p>Conejo <span class="text-warning">[ : ]</span> {PeruTurkey}</p>
+          <hr>
+          <p>{PeruTurkey} <span class="text-warning">[ : ]</span> Teran Advanced Union</p>
+          <hr>
+          <p>Adrenaline Extreme <span class="text-warning">[ : ]</span> Conejo</p>
+          <hr>
+          <p>Conejo <span class="text-warning">[ : ]</span> Teran Advanced Union</p>
+          <hr>
+          <p>Adrenaline Extreme <span class="text-warning">[ : ]</span> {PeruTurkey}</p>
+          <hr>
+          <h3 class="text-muted">Group F</h3>
+          <p>Good Game Well Played! <span class="text-warning">[2:0]</span> Squad of Bhoppers</p>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/83340386_167767401175051_6136174657163755520_n.jpg?_nc_cat=103&_nc_ohc=20_lfC7SZacAX-Ek4Am&_nc_ht=scontent.flwo3-1.fna&oh=ab834d57df591d2afabf469d3c564ae4&oe=5ED837F7" target="_blank">boot_camp</a>
+          <a href="https://scontent.flwo3-1.fna.fbcdn.net/v/t1.15752-9/82930910_398497464305038_8285974924623872000_n.jpg?_nc_cat=104&_nc_ohc=c5BODZmvAmAAX_Rf-tA&_nc_ht=scontent.flwo3-1.fna&oh=9b94b2fc3a778f2b562d765d688f0189&oe=5E926F7A" target="_blank">endcamp</a>
+          <hr>
+          <p>Elite Turkish Players <span class="text-warning">[ : ]</span> zero tolerance</p>
+          <hr>
+          <p>zero tolerance <span class="text-warning">[ : ]</span> Good Game Well Played!</p>
+          <hr>
+          <p>Squad of Bhoppers <span class="text-warning">[ : ]</span> Elite Turkish Players</p>
+          <hr>
+          <p>Elite Turkish Players <span class="text-warning">[ : ]</span> Good Game Well Played!</p>
+          <hr>
+          <p>Squad of Bhoppers <span class="text-warning">[ : ]</span> zero tolerance</p>
+          <hr>
+        </div>
+      </div> -->
+    </div>
+  </main>
+  <footer class="mx-auto">
+    <p class="text-muted">Administrators:</p>
+    <a href="https://steamcommunity.com/id/chort" target="_blank">chrtx</a>
+    <br>
+    <a href="https://steamcommunity.com/id/execut4ble" target="_blank">execut4ble</a>
+    <br>
+    <p class="text-muted">Discussing about tournament is going <a href="https://forum.half-life.pro/viewtopic.php?f=10&t=7508&from_new_topic=1" target="_blank">here</a> and in <a href="https://discord.gg/3XYqFDd" target="_blank">discord</a></p>
+    <hr>
+    <div class="d-flex justify-content-center" id="social-media">
+      <a href="https://www.youtube.com/user/execut4ble/featured" target="_blank"><img src="img/youtube.svg" alt="youtube"></a>
+      <a href="https://discord.gg/3XYqFDd" target="_blank"><img src="img/discord.svg" alt="discord"></a>
+      <a href="https://steamcommunity.com/id/chort" target="_blank"><img src="img/steam.svg" alt="steam"></a>
+    </div>
+  </footer>
+</body>
+</html>

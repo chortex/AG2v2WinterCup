@@ -1,0 +1,24 @@
+#cover-header {
+  display: none;
+}
+main {
+  margin-top: 80px;
+}
+footer {
+  width: 90%;
+}
+#social-media a {
+  margin: 20px 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  #cover-image {
+    display: none;
+  }
+  #cover-header {
+    display: block;
+  }
+  main {
+    margin-top: 120px;
+  }
+}
